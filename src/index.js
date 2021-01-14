@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Root, Container} from 'native-base';
 import PropTypes from "prop-types";
 import {
   View,
@@ -113,6 +114,7 @@ class RBSheet extends Component {
           if (closeOnPressBack) this.setModalVisible(false);
         }}
       >
+        <Root><Container>
         <KeyboardAvoidingView
           enabled={keyboardAvoidingViewEnabled}
           behavior="padding"
@@ -138,6 +140,7 @@ class RBSheet extends Component {
             {children}
           </Animated.View>
         </KeyboardAvoidingView>
+      </Container></Root>
       </Modal>
     );
   }
