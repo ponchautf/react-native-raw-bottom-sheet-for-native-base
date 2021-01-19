@@ -114,7 +114,7 @@ class RBSheet extends Component {
           if (closeOnPressBack) this.setModalVisible(false);
         }}
       >
-        <Root><Container>
+        <Root>
         <KeyboardAvoidingView
           enabled={keyboardAvoidingViewEnabled}
           behavior="padding"
@@ -140,7 +140,7 @@ class RBSheet extends Component {
             {children}
           </Animated.View>
         </KeyboardAvoidingView>
-      </Container></Root>
+      </Root>
       </Modal>
     );
   }
